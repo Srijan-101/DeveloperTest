@@ -199,7 +199,6 @@ export async function getBookSortByTitle(req: Request, res: Response) {
 
 // @route GET /getCSV
 // @access Public
-
 export async function generateCSV(req: Request, res: Response) {
     try {
         //check for magazines
