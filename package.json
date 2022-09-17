@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/App.ts",
-    "dev": "nodemon --exec ts-node src/App.ts",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+     "start" : "node build/App.js",
+     "build" : "tsc"
   },
   "author": "",
   "license": "ISC",

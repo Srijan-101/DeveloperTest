@@ -6,7 +6,7 @@ import {Request,Response}  from 'express'
 
 import routes from './Routes/app.routes'
 
-const port = config.get("port") as number  || process.env.PORT ;
+const port = 4003 || process.env.PORT ;
 const host = config.get("host") as string;
 
 const app = express();
