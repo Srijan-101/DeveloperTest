@@ -3,9 +3,9 @@ import { findoutbyAuthorsEmail, findoutbyISBN, generateCSV, getAuthorsDetails ,g
 const path = require("path");
 
 export default function (app:Express) {
-    app.get("/", (req:Request, res:Response) => {
-        res.sendFile(path.join(__dirname, "../../Client/public", "index.html"));
-    });
+
+   
+
     app.get('/Authors',getAuthorsDetails);
     app.get('/Books',getBooksDetails);
     app.get('/Magazines',getMagazineDetails);

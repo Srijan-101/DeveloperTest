@@ -13,9 +13,9 @@ const host = config.get("host");
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../Client/build')));
+app.use(express.static(path.join(__dirname, '../../Client/build')));
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../Client/build", "index.html"));
+    res.sendFile(path.join(__dirname, "../../Client/build", "index.html"));
 });
 app.listen(port, host, () => {
     console.log(`Server running at ${port}`);
