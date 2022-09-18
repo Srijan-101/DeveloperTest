@@ -6,7 +6,7 @@ import {Request,Response}  from 'express'
 
 import routes from './Routes/app.routes'
 
-const port = 4003 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const host = config.get("host") as string;
 
 const app = express();
@@ -20,7 +20,7 @@ app.get("/", (req:Request, res:Response) => {
 });
 
 
-app.listen(port,host,()=>{
+app.listen(port,()=>{
     console.log(`Server running at ${port}`);
     routes(app);
 })
