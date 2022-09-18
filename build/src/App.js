@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../../Client/build')));
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../../Client/build", "index.html"));
 });
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server running at ${port}`);
     (0, app_routes_1.default)(app);
 });
