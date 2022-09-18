@@ -3,9 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_controllers_1 = require("../Controllers/app.controllers");
 const path = require("path");
 function default_1(app) {
-    app.get("/", (req, res) => {
-        res.sendFile(path.join(__dirname, "../../Client/public", "index.html"));
-    });
     app.get('/Authors', app_controllers_1.getAuthorsDetails);
     app.get('/Books', app_controllers_1.getBooksDetails);
     app.get('/Magazines', app_controllers_1.getMagazineDetails);
