@@ -8,7 +8,7 @@ const config = require('config');
 const cors = require('cors');
 const path = require("path");
 const app_routes_1 = __importDefault(require("./Routes/app.routes"));
-const port = 4003 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const app = express();
 app.use(express.json());
 app.use(cors());
